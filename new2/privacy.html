@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | USA Geography</title>
+
+    <meta name="description"
+          content="Read the Privacy Policy for USA Geography, including information about cookies, advertising, third-party services, and external links.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#123c69">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+             <link rel="icon" type="image/x-icon" href="favicon.ico">
+          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer-style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <h1>Privacy Policy</h1>
+
+    <a href="index.html" class="page-label">Home</a>
+
+</header>
+
+
+<main class="privacy-page">
+
+    <section class="privacy-box">
+
+        <h1>Privacy Policy</h1>
+
+        <p>
+            <strong>Last updated: September 2026</strong>
+        </p>
+
+        <p>
+            At <strong>USA Geography</strong>, we respect your privacy.
+            This website provides geographical and administrative information
+            about the United States, including its 50 states, Washington, D.C.,
+            U.S. territories, and U.S. Minor Outlying Islands.
+        </p>
+
+        <h2>Information We Collect</h2>
+
+        <p>
+            USA Geography does not require visitors to create an account or
+            provide personal information to browse the website. However,
+            third-party services used on the website may collect certain
+            information according to their own privacy policies.
+        </p>
+
+        <h2>Advertising</h2>
+
+        <p>
+            This website may display advertisements provided by third-party
+            advertising services, including <strong>Google AdSense</strong>.
+            These services may use cookies or similar technologies for
+            advertising and measurement purposes.
+        </p>
+
+        <h2>Cookies</h2>
+
+        <p>
+            Cookies and similar technologies may be used by third-party services
+            for advertising, analytics, security, and website functionality.
+            You may manage or disable cookies through your browser settings.
+        </p>
+
+        <h2>Third-Party Services</h2>
+
+        <p>
+            USA Geography may use third-party services for advertising,
+            analytics, website functionality, or security. These providers
+            operate according to their own privacy policies and terms.
+        </p>
+
+        <h2>External Links</h2>
+
+        <p>
+            This website may contain links to external websites and resources.
+            USA Geography is not responsible for the content or privacy
+            practices of external websites.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+
+        <p>
+            This Privacy Policy may be updated from time to time.
+            Any changes will be posted on this page with an updated date.
+        </p>
+
+        <h2>Contact Us</h2>
+
+        <p>
+            If you have questions about this Privacy Policy, please contact us
+            through our <a href="contact.html">Contact Us</a> page.
+        </p>
+
+        <p>
+            <a href="index.html" class="home-link">Home</a>
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-ad">
+        <!-- Google AdSense 300x250 advertisement -->
+    </div>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+        <a href="privacy.html">Privacy Policy</a>
+
+        <a href="terms.html">Terms of Use</a>
+
+        <a href="report.html">Report an Error</a>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="copyright">
+        © 2026 USA Geography. All rights reserved.
+    </p>
+
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const links = document.querySelectorAll(".footer-links a[data-page]");
+
+    const currentUrl = new URL(window.location.href);
+
+    links.forEach(function (link) {
+
+        const page = link.getAttribute("data-page");
+
+        if (!page) return;
+
+        let basePath = currentUrl.pathname;
+
+        // إذا كانت الصفحة ملف HTML داخل مجلد فرعي
+        if (!basePath.endsWith("/")) {
+            basePath = basePath.substring(0, basePath.lastIndexOf("/") + 1);
+        }
+
+        // إذا كنا داخل states أو territories أو أي مجلد فرعي
+        const depth = basePath.split("/").filter(Boolean).length;
+
+        let prefix = "";
+
+        // نرجع إلى جذر الموقع
+        for (let i = 0; i < depth; i++) {
+            prefix += "../";
+        }
+
+        link.href = prefix + page;
+    });
+
+});
+</script>
+</body>
+</html>
