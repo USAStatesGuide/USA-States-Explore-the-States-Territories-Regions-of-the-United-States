@@ -1,0 +1,439 @@
+            
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Error | USA Geography</title>
+
+    <meta name="description"
+          content="Report incorrect, outdated, or incomplete information on USA Geography.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#123c69">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+             <link rel="icon" type="image/x-icon" href="favicon.ico">
+          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer-style.css">
+
+    <style>
+        /* ================================
+           Error Report Form
+        ================================= */
+
+        .error-report-form {
+            margin-top: 25px;
+            padding: 24px;
+            border: 1px solid #d9e1e8;
+            border-radius: 10px;
+            background: #f8fafc;
+        }
+
+        .error-report-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #123c69;
+        }
+
+        .error-report-form input,
+        .error-report-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            border: 1px solid #cbd5df;
+            border-radius: 7px;
+            background: #ffffff;
+            font-family: inherit;
+            font-size: 15px;
+            color: #333;
+            outline: none;
+            transition: border-color 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
+
+        .error-report-form input:focus,
+        .error-report-form textarea:focus {
+            border-color: #123c69;
+            box-shadow: 0 0 0 2px rgba(18, 60, 105, 0.10);
+        }
+
+        .error-report-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .error-report-form button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 11px 22px;
+            border: none;
+            border-radius: 7px;
+            background: #123c69;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease,
+                        transform 0.2s ease;
+        }
+
+        .error-report-form button:hover {
+            background: #0d2e51;
+        }
+
+        .error-report-form button:active {
+            transform: translateY(1px);
+        }
+
+        .form-note {
+            margin-top: -5px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .anonymous-note {
+            margin-top: 15px;
+            padding: 12px 14px;
+            border-left: 4px solid #123c69;
+            background: #eef4f9;
+            color: #444;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ================================
+           Contact Email Box
+        ================================= */
+
+        .contact-email-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 14px;
+            margin: 15px 0 20px;
+            border: 1px solid #d9e1e8;
+            border-radius: 8px;
+            background: #f8fafc;
+        }
+
+        #emailText {
+            word-break: break-word;
+        }
+
+        #copyEmailBtn {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            background: #123c69;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        #copyEmailBtn:hover {
+            background: #0d2e51;
+        }
+
+        /* ================================
+           Mobile
+        ================================= */
+
+        @media (max-width: 600px) {
+
+            .error-report-form {
+                padding: 18px;
+            }
+
+            .contact-email-box {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            #copyEmailBtn {
+                justify-content: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <h1>Report an Error</h1>
+
+    <a href="index.html" class="page-label">Home</a>
+
+</header>
+
+
+<main class="privacy-page">
+
+    <section class="privacy-box">
+
+        <h1>Report an Error</h1>
+
+        <p>
+            If you notice incorrect, outdated, incomplete, or unclear information
+            on <strong>USA Geography</strong>, we appreciate your help in identifying it.
+        </p>
+
+
+        <h2>What Can You Report?</h2>
+
+        <p>
+            You can report factual errors, incorrect geographical information,
+            outdated details, broken links, missing information, or other issues
+            that may affect the accuracy or usability of the website.
+        </p>
+
+
+        <h2>Submit a Report</h2>
+
+        <p>
+            You can use the form below to report an error directly to us.
+            You do not need to provide your name or email address.
+        </p>
+
+
+        <!-- Error Report Form -->
+
+        <form action="https://formsubmit.co/robertrobertrobertrobertmike@gmail.com"
+              method="POST"
+              class="error-report-form">
+
+            <!-- Email subject -->
+
+            <input type="hidden"
+                   name="_subject"
+                   value="New Error Report - USA Geography">
+
+            <!-- Enable CAPTCHA protection -->
+
+            <input type="hidden"
+                   name="_captcha"
+                   value="true">
+
+            
+
+
+            <!-- Error description -->
+
+            <label for="message">
+                Describe the Error
+            </label>
+
+            <textarea id="message"
+                      name="Error Description"
+                      placeholder="Please describe the incorrect, missing, or outdated information..."
+                      required></textarea>
+
+
+            <!-- Optional email -->
+
+            <label for="email">
+                Your Email (optional)
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="your@email.com">
+
+            <p class="form-note">
+                Your email address is optional. Leave it blank if you wish to remain anonymous.
+            </p>
+
+
+            <button type="submit">
+                ✉️ Send Report
+            </button>
+
+        </form>
+
+
+        <div class="anonymous-note">
+            <strong>Privacy:</strong>
+            You can submit a report without providing your name or email address.
+            If you provide an email address, it will only be used to respond to your report.
+        </div>
+
+
+        <h2>How to Report an Error</h2>
+
+        <p>
+            Please provide as much specific information as possible, including
+            the name of the state, territory, island, or page where the issue
+            appears.
+        </p>
+
+
+        <p>
+            You can also contact us directly by email:
+        </p>
+
+
+        <div class="contact-email-box">
+
+            <span id="emailText">
+                robertrobertrobertrobertmike@gmail.com
+            </span>
+
+            <button type="button"
+                    id="copyEmailBtn"
+                    onclick="copyEmail()">
+
+                <span id="copyIcon">📋</span>
+
+                <span id="copyText">Copy</span>
+
+            </button>
+
+        </div>
+
+
+        <p>
+            Providing specific details or a link to the affected page can help
+            us review and correct the information more efficiently.
+        </p>
+
+
+        <p>
+            <a href="index.html" class="home-link">
+                Home
+            </a>
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-ad">
+        <!-- Google AdSense 300x250 advertisement -->
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+        <a href="privacy.html">Privacy Policy</a>
+
+        <a href="terms.html">Terms of Use</a>
+
+        <a href="report.html">Report an Error</a>
+
+    </div>
+
+
+    <div class="footer-divider"></div>
+
+
+    <p class="copyright">
+        © 2026 USA Geography. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const links = document.querySelectorAll(".footer-links a[data-page]");
+
+    const currentUrl = new URL(window.location.href);
+
+    links.forEach(function (link) {
+
+        const page = link.getAttribute("data-page");
+
+        if (!page) return;
+
+        let basePath = currentUrl.pathname;
+
+        // إذا كانت الصفحة ملف HTML داخل مجلد فرعي
+        if (!basePath.endsWith("/")) {
+            basePath = basePath.substring(
+                0,
+                basePath.lastIndexOf("/") + 1
+            );
+        }
+
+        // إذا كنا داخل states أو territories أو أي مجلد فرعي
+        const depth = basePath
+            .split("/")
+            .filter(Boolean)
+            .length;
+
+        let prefix = "";
+
+        // نرجع إلى جذر الموقع
+        for (let i = 0; i < depth; i++) {
+            prefix += "../";
+        }
+
+        link.href = prefix + page;
+
+    });
+
+});
+</script>
+
+
+<script>
+function copyEmail() {
+
+    const email =
+        document.getElementById("emailText").textContent.trim();
+
+    const icon =
+        document.getElementById("copyIcon");
+
+    const text =
+        document.getElementById("copyText");
+
+
+    navigator.clipboard.writeText(email).then(function () {
+
+        icon.textContent = "✅";
+        text.textContent = "Copied!";
+
+
+        setTimeout(function () {
+
+            icon.textContent = "📋";
+            text.textContent = "Copy";
+
+        }, 1500);
+
+    });
+
+}
+</script>
+
+</body>
+</html>
