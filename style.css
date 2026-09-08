@@ -1294,3 +1294,90 @@ details > summary::marker {
         font-size: 18px;
     }
 }
+
+/* =========================================
+   Remove all Plus / Minus buttons
+   Keep Copy Button only
+   ========================================= */
+
+.parts-plus {
+    display: none !important;
+}
+
+/* مساحة مناسبة لزر النسخ */
+.parts-box summary {
+    padding-right: 55px;
+}
+
+/* زر النسخ */
+.parts-copy-btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: #e3f0fa;
+    color: #1769aa;
+
+    cursor: pointer;
+    z-index: 5;
+
+    transition: all 0.2s ease;
+}
+
+.parts-copy-btn:hover {
+    background: #1769aa;
+    color: #ffffff;
+}
+
+.parts-copy-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.parts-copy-btn.copied {
+    background: #e8f7ee;
+    color: #198754;
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .parts-box summary {
+        padding-right: 48px;
+    }
+
+    .parts-copy-btn {
+        right: 12px;
+        width: 27px;
+        height: 27px;
+        border-radius: 6px;
+    }
+
+    .parts-copy-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+}
