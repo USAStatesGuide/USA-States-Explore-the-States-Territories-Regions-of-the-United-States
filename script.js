@@ -360,3 +360,26 @@ if (plusButton) {
 
 });
 
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll("details > summary").forEach(function (summary) {
+
+        // Remove trailing ▼ from summary text
+        summary.childNodes.forEach(function (node) {
+
+            if (node.nodeType === Node.TEXT_NODE) {
+                node.textContent = node.textContent.replace(/\s*▼\s*$/, "");
+            }
+
+        });
+
+    });
+
+});

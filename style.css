@@ -1193,3 +1193,28 @@ body {
         height: 14px;
     }
 }
+
+
+
+
+/* =========================================
+   Remove arrows from all details titles
+   ========================================= */
+
+/* Remove custom arrows */
+.parts-arrow {
+    display: none !important;
+}
+
+/* Remove the browser's default details arrow */
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::marker {
+    display: none;
+}
