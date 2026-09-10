@@ -1,281 +1,192 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" dir="ltr">
 <head>
 
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | USA Geography</title>
+<title>Contact Us | USA States</title>
 
-    <meta name="description"
-          content="Contact USA Geography for questions, suggestions, feedback, or other inquiries. Anonymous messages are welcome.">
+<meta name="description"
+      content="Contact USA States for questions, suggestions, feedback, or other inquiries. Anonymous messages are welcome.">
 
-    <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
-    <meta name="theme-color" content="#123c69">
+<link rel="canonical" href="https://usastatesguide.github.io/USA-States-Explore-the-States-Territories-Regions-of-the-United-States/contact.html">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+<meta name="theme-color" content="#123c69">
 
-             <link rel="icon" type="image/x-icon" href="favicon.ico">
-          <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer-style.css">
+<link rel="icon" type="image/png" href="favicon.png">
 
+<meta property="og:site_name" content="USA States">
+<meta property="og:title" content="Contact Us | USA States">
+<meta property="og:description"
+      content="Contact USA States for questions, suggestions, feedback, or other inquiries. Anonymous messages are welcome.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="og-image.png">
 
-    <style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footer-style.css">
 
-        /* ================================
-           Contact Form
-        ================================= */
+<style>
+    /* ================================
+       Contact Form
+    ================================= */
+
+    .contact-form {
+        margin-top: 25px;
+        padding: 24px;
+        border: 1px solid #d9e1e8;
+        border-radius: 10px;
+        background: #f8fafc;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #123c69;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        margin-bottom: 18px;
+        border: 1px solid #cbd5df;
+        border-radius: 7px;
+        background: #ffffff;
+        font-family: inherit;
+        font-size: 15px;
+        color: #333;
+        outline: none;
+        transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #123c69;
+        box-shadow:
+            0 0 0 2px rgba(18, 60, 105, 0.10);
+    }
+
+    .contact-form textarea {
+        min-height: 170px;
+        resize: vertical;
+    }
+
+    .contact-form button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 11px 22px;
+        border: none;
+        border-radius: 7px;
+        background: #123c69;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+            background 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .contact-form button:hover {
+        background: #0d2e51;
+    }
+
+    .contact-form button:actinput:focusve {
+        transform: translateY(1px);
+    }
+
+    .form-note {
+        margin-top: -5px;
+        margin-bottom: 20px;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .anonymous-note {
+        margin-top: 15px;
+        padding: 12px 14px;
+        border-left: 4px solid #123c69;
+        background: #eef4f9;
+        color: #444;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* ================================
+       Contact Email Box
+    ================================= */
+
+    .contact-email-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+        margin: 15px 0 20px;
+        border: 1px solid #d9e1e8;
+        border-radius: 8px;
+        background: #f8fafc;
+    }
+
+    #emailText {
+        word-break: break-word;
+    }
+
+    #copyEmailBtn {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        background: #123c69;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    #copyEmailBtn:hover {
+        background: #0d2e51;
+    }
+
+    /* ================================
+       Mobile
+    ================================= */
+
+    @media (max-width: 600px) {
 
         .contact-form {
-
-            margin-top: 25px;
-
-            padding: 24px;
-
-            border: 1px solid #d9e1e8;
-
-            border-radius: 10px;
-
-            background: #f8fafc;
+            padding: 18px;
         }
-
-
-        .contact-form label {
-
-            display: block;
-
-            margin-bottom: 8px;
-
-            font-weight: 600;
-
-            color: #123c69;
-        }
-
-
-        .contact-form input,
-        .contact-form textarea {
-
-            width: 100%;
-
-            box-sizing: border-box;
-
-            padding: 12px 14px;
-
-            margin-bottom: 18px;
-
-            border: 1px solid #cbd5df;
-
-            border-radius: 7px;
-
-            background: #ffffff;
-
-            font-family: inherit;
-
-            font-size: 15px;
-
-            color: #333;
-
-            outline: none;
-
-            transition:
-                border-color 0.2s ease,
-                box-shadow 0.2s ease;
-        }
-
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-
-            border-color: #123c69;
-
-            box-shadow:
-                0 0 0 2px rgba(18, 60, 105, 0.10);
-        }
-
-
-        .contact-form textarea {
-
-            min-height: 170px;
-
-            resize: vertical;
-        }
-
-
-        .contact-form button {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 7px;
-
-            padding: 11px 22px;
-
-            border: none;
-
-            border-radius: 7px;
-
-            background: #123c69;
-
-            color: #ffffff;
-
-            font-family: inherit;
-
-            font-size: 15px;
-
-            font-weight: 600;
-
-            cursor: pointer;
-
-            transition:
-                background 0.2s ease,
-                transform 0.2s ease;
-        }
-
-
-        .contact-form button:hover {
-
-            background: #0d2e51;
-        }
-
-
-        .contact-form button:active {
-
-            transform: translateY(1px);
-        }
-
-
-        .form-note {
-
-            margin-top: -5px;
-
-            margin-bottom: 20px;
-
-            font-size: 13px;
-
-            color: #666;
-        }
-
-
-        .anonymous-note {
-
-            margin-top: 15px;
-
-            padding: 12px 14px;
-
-            border-left: 4px solid #123c69;
-
-            background: #eef4f9;
-
-            color: #444;
-
-            font-size: 14px;
-
-            line-height: 1.6;
-        }
-
-
-        /* ================================
-           Contact Email Box
-        ================================= */
 
         .contact-email-box {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            gap: 12px;
-
-            padding: 12px 14px;
-
-            margin: 15px 0 20px;
-
-            border: 1px solid #d9e1e8;
-
-            border-radius: 8px;
-
-            background: #f8fafc;
+            flex-direction: column;
+            align-items: stretch;
         }
-
-
-        #emailText {
-
-            word-break: break-word;
-        }
-
 
         #copyEmailBtn {
-
-            flex-shrink: 0;
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 6px;
-
-            padding: 8px 12px;
-
-            border: none;
-
-            border-radius: 6px;
-
-            background: #123c69;
-
-            color: #ffffff;
-
-            cursor: pointer;
-
-            font-family: inherit;
+            justify-content: center;
         }
-
-
-        #copyEmailBtn:hover {
-
-            background: #0d2e51;
-        }
-
-
-        /* ================================
-           Mobile
-        ================================= */
-
-        @media (max-width: 600px) {
-
-            .contact-form {
-
-                padding: 18px;
-            }
-
-
-            .contact-email-box {
-
-                flex-direction: column;
-
-                align-items: stretch;
-            }
-
-
-            #copyEmailBtn {
-
-                justify-content: center;
-            }
-
-        }
-
-    </style>
+    }
+</style>
 
 
 </head>
+
 
 
 <body>
@@ -304,7 +215,7 @@
 
         <p>
             We welcome your questions, suggestions, feedback, opinions,
-            and other messages about <strong>USA Geography</strong>.
+            and other messages about <strong>USA States</strong>.
         </p>
 
 
@@ -347,7 +258,7 @@
 
             <input type="hidden"
                    name="_subject"
-                   value="New Contact Message - USA Geography">
+                   value="New Contact Message - USA States">
 
 
             <!-- CAPTCHA protection -->
@@ -551,7 +462,7 @@
 
     <p class="copyright">
 
-        © 2026 USA Geography. All rights reserved.
+        © 2026 USA States. All rights reserved.
 
     </p>
 
